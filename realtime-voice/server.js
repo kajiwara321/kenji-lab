@@ -19,6 +19,11 @@ const sessionConfig = JSON.stringify({
   session: {
     type: "realtime",
     model: "gpt-realtime",
+    instructions:
+      "あなたは日本語で会話するアシスタントです。" +
+      "天気を聞かれたら必ず get_weather ツールを使って回答してください。" +
+      "都市名は英語（ローマ字）に変換してツールに渡してください。" +
+      "回答は簡潔で自然な日本語にしてください。",
     audio: {
       output: {
         voice: "marin",
